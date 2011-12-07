@@ -4,5 +4,6 @@
 lib/functor/version.rb
 lib/functor.rb
 test/case_functor.rb
+HISOTRY.md
 LICENSE.txt
 README.md
