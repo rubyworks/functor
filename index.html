@@ -1,1 +1,30 @@
-My GitHub Page
+<h1>Functor</h1>
+
+<p><a href="http://rubyworks.github.com/functor">Homepage</a> |
+<a href="http://github.com/rubyworks/functor">Source Code</a> |
+<a href="http://github.com/rubyworks/functor/issues">Report an Issue</a></p>
+
+<h2>Synopsis</h2>
+
+<p>By definition a Functor is simply a first class method, but these are common
+in the form of Method and Proc. So for Ruby a Functor is a more specialized
+as a Higher-order function or Metafunction. Essentally, a Functor can vary
+its behavior accorrding to the operation applied to it.</p>
+
+<pre><code>f = Functor.new { |op, x| x.send(op, x) }
+
+(f + 1)  #=&gt; 2
+(f + 2)  #=&gt; 4
+(f + 3)  #=&gt; 6
+(f * 1)  #=&gt; 1
+(f * 2)  #=&gt; 4
+(f * 3)  #=&gt; 9
+</code></pre>
+
+<h2>Copyrights</h2>
+
+<p>Copyright (c) 2004 Rubyworks</p>
+
+<p>Functor is distributable in accordance with the <em>BSD-2-Clause</em> license.</p>
+
+<p>See LICENSE.txt for details.</p>
