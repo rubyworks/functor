@@ -13,6 +13,12 @@
 #
 class Functor #< BasicObject
 
+  if RUBY_VERSION < '1.9'
+    require 'functor/version'
+  else
+    require_relative 'functor/version'
+  end
+
   EXCEPTIONS = [:binding, :inspect, :object_id]
   if defined?(::BasicObject)
     EXCEPTIONS.concat(::BasicObject.instance_methods)
