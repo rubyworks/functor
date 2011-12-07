@@ -1,0 +1,6 @@
+#!mast .ruby .yardopts bin lib man qed spec test [A-Z]*.*
+.yardopts
+lib/functor.rb
+test/case_functor.rb
+LICENSE.txt
+README.md

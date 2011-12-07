@@ -1,0 +1,7 @@
+.reap/digest
+.yardoc
+log
+pkg
+tmp
+web
+work

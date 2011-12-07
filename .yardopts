@@ -1,0 +1,8 @@
+--title "OpenDSL"
+--readme README.rdoc
+--protected
+--private
+lib/**/*.rb
+-
+[A-Z]*.*
+

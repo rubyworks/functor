@@ -1,0 +1,39 @@
+---
+erbside:
+  path: lib/functor/version.rb
+
+email:
+  mailto:
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+
+qed:
+  active: false
+  files: qed/
+
+qedoc:
+  active: false
+  files: qed/
+  title: "OpenDSL Demonstandum"
+  output: QED.rdoc
+
+gem:
+  active: true
+
+github:
+  gh_pages: web
+
+dnote:
+  title: Source Notes
+  output: log/NOTES.rdoc
+
+vclog:
+  output:
+    - log/History.rdoc
+    - log/Changes.rdoc
+
+tag:
+  service: custom
+  release: |
+    puts %[pom news | git tag -a -F - #{project.version}]
+
