@@ -27,9 +27,9 @@ repositories:
   scm: git
   name: upstream
 resources:
-  Website: http://rubyworks.github.com/functor
-  Development: http://github.com/rubyworks/functor
-  Mailing List: http://groups.google.com/group/rubyworks-mailinglist
+  home: http://rubyworks.github.com/functor
+  code: http://github.com/rubyworks/functor
+  mail: http://groups.google.com/group/rubyworks-mailinglist
 extra: {}
 load_path:
 - lib
