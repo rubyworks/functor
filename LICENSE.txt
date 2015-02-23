@@ -1,9 +1,3 @@
-Functor - Higher Order Functions for Ruby
-
-<http://rubyworks.github.com/functor>
-
-Copyright 2004 Rubyworks. All rights reserved.
-
 BSD-2-Clause License
 
 Redistribution and use in source and binary forms, with or without

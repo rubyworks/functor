@@ -1,4 +1,0 @@
-By definition a Functor is simply a first class method, but these are common
-in the form of Method and Proc. So for Ruby a Functor is a more specialized
-as a Higher-order function or Metafunction. Essentally, a Functor can vary
-its behavior accorrding to the operation applied to it.
