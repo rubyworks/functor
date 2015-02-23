@@ -1,25 +1,19 @@
-# By definition a Functor is simply a first class method, but these are common
-# in the form of Method and Proc. So for Ruby a Functor is a more specialized
-# as a Higher-order function or Metafunction. Essentally, a Functor can vary
-# its behavior accorrding to the operation applied to it.
+# The Ruby Functor is an Higher Order Message. Essentally,
+# it is anonymous delegator, an object that can vary its
+# behavior according to the operations applied to it.
 #
-#   f = Functor.new { |op, x| x.send(op, x) }
-#   (f + 1)  #=> 2
-#   (f + 2)  #=> 4
-#   (f + 3)  #=> 6
-#   (f * 1)  #=> 1
-#   (f * 2)  #=> 4
-#   (f * 3)  #=> 9
+#     f = Functor.new { |op, x| x.send(op, x) }
+#     (f + 1)  #=> 2
+#     (f + 2)  #=> 4
+#     (f + 3)  #=> 6
+#     (f * 1)  #=> 1
+#     (f * 2)  #=> 4
+#     (f * 3)  #=> 9
 #
-class Functor #< BasicObject
-
-  if RUBY_VERSION < '1.9'
-    require 'functor/version'
-  else
-    require_relative 'functor/version'
-  end
+class Functor < BasicObject
 
   EXCEPTIONS = [:binding, :inspect, :object_id]
+
   if defined?(::BasicObject)
     EXCEPTIONS.concat(::BasicObject.instance_methods)
     EXCEPTIONS.uniq!
