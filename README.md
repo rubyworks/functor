@@ -30,8 +30,8 @@ We can also think of the Functor as an *anonymous/generic delegator*. Instead
 of having to create a specialized delegator class, a functor can be used instead.
 Functors are perfect when the delegation required is minimal.
 
-**NOTE** Ruby functors are not the same thing a Haskell functors. In Ruby
-Enumerators are most akin to Haskell's idea of a functor.
+**NOTE** Ruby functors are not the same as Haskell functors. In Ruby
+Enumerators are more akin to Haskell's idea of a functor.
 
 
 ## Batteries Included
