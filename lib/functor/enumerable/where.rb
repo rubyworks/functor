@@ -1,12 +1,13 @@
+require 'functor'
+
 module Enumerable
 
-  #
   # Higher-order form of #select.
   #
   #   [1, 2, 3].where > 2  #=> [3]
   #
   def where
-    HOM.new do |op, *a, &b|
+    Functor.new do |op, *a, &b|
       select{ |e| e.public_send(op, *a, &b) }
     end
   end
